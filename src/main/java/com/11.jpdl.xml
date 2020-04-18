@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="11" xmlns="http://jbpm.org/4.4/jpdl">
+   <start g="12,276,157,52" name="start1">
+      <transition name="to 报修申请" to="报修申请" g="-36,-33"/>
+   </start>
+   <state name="报修申请" g="108,276,133,52">
+      <transition name="to 宿管" to="宿管" g="-27,-24"/>
+   </state>
+   <state name="宿管" g="300,276,92,52">
+      <transition name="to exclusive1" to="exclusive1" g="-47,-29"/>
+   </state>
+   <decision name="exclusive1" g="504,276,157,52">
+      <transition name="to 管理员" to="管理员" g="-34,-28"/>
+      <transition name="to 重新填写信息" to="报修申请" g="529,206;359,205;173,208:-85,-28"/>
+   </decision>
+   <state name="管理员" g="648,276,157,52">
+      <transition name="to end1" to="end1" g="-35,-27"/>
+   </state>
+   <end name="end1" g="900,276,92,52"/>
+</process>

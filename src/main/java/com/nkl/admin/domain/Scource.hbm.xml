@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.nkl.admin.domain.Scource" table="scource">
+		<id name="scource_id" type="java.lang.Integer">
+			<column name="scource_id" />
+			<generator class="native" />
+		</id>
+		<property name="user_id" type="java.lang.Integer">
+			<column name="user_id"  />
+		</property>
+		<property name="course_id" type="java.lang.Integer">
+			<column name="course_id"  />
+		</property>
+		<property name="scource_year" type="java.lang.Integer">
+			<column name="scource_year"  />
+		</property>
+		<property name="scource_year_half" type="java.lang.Integer">
+			<column name="scource_year_half"  />
+		</property>
+		<property name="flag" type="java.lang.Integer">
+			<column name="flag"  />
+		</property>
+		<property name="piid" type="java.lang.String">
+			<column name="piid"  />
+		</property>
+		<property name="bf1" type="java.lang.String">
+			<column name="bf1"  />
+		</property>
+		<property name="bf2" type="java.lang.String"> 
+			<column name="bf2"   /> 
+		</property>  
+	</class>
+</hibernate-mapping>

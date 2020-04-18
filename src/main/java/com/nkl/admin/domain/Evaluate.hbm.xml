@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.nkl.admin.domain.Evaluate" table="evaluate">
+		<id name="evaluate_id" type="java.lang.Integer">
+			<column name="evaluate_id" />
+			<generator class="native" />
+		</id>
+		<property name="evaluate_year" type="java.lang.Integer">
+			<column name="evaluate_year"  />
+		</property>
+		<property name="evaluate_year_half" type="java.lang.Integer">
+			<column name="evaluate_year_half"  />
+		</property>
+		<property name="teacher_id" type="java.lang.Integer">
+			<column name="teacher_id"  />
+		</property>
+		<property name="student_id" type="java.lang.Integer">
+			<column name="student_id"  />
+		</property>
+		<property name="quality_score" type="java.lang.Integer">
+			<column name="quality_score"  />
+		</property>
+		<property name="post_score" type="java.lang.Integer">
+			<column name="post_score"  />
+		</property>
+		<property name="skill_score" type="java.lang.Integer">
+			<column name="skill_score"  />
+		</property>
+		<property name="coach_score" type="java.lang.Integer">
+			<column name="coach_score"  />
+		</property>
+	</class>
+</hibernate-mapping>

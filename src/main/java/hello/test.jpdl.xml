@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="test" xmlns="http://jbpm.org/4.4/jpdl">
+   <task assignee="#{application}" g="454,139,101,55" name="添加成绩">
+      <transition g="-100,-25" name="to 张老师审批" to="张老师审批"/> 
+   </task>
+   <task assignee="张老师" g="458,255,98,52" name="张老师审批">
+      <transition g="-100,-25" name="to 李老师审批" to="李老师审批"/>
+   </task>
+   <task assignee="李老师" g="464,377,98,57" name="李老师审批">
+      <transition g="-100,-25" name="to 王老师审批" to="王老师审批"/>
+      <transition g="625,384;627,310:-100,-25" name="to 驳回" to="张老师审批"/>
+   </task>
+   <start g="483,34,48,48" name="start1">
+      <transition g="-85,-25" name="to 添加成绩" to="添加成绩"/>
+   </start>
+   <task assignee="王老师" g="464,477,98,62" name="王老师审批">
+      <transition g="-62,-25" name="to end1" to="end1"/>
+   </task>
+   <end g="489,601,48,48" name="end1"/>  
+</process>

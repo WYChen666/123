@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.nkl.admin.domain.Course" table="course">
+		<id name="course_id" type="java.lang.Integer">
+			<column name="course_id" />
+			<generator class="native" />
+		</id>
+		<property name="course_name" type="java.lang.String">
+			<column name="course_name"  length="100" />
+		</property>
+		<property name="course_type" type="java.lang.Integer">
+			<column name="course_type"  />
+		</property>
+		<property name="teacher_id" type="java.lang.Integer">
+			<column name="teacher_id"  />
+		</property>
+		<property name="note" type="java.lang.String">
+			<column name="note"  length="300" />
+		</property>
+	</class>
+</hibernate-mapping>
