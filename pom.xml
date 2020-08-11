@@ -10,7 +10,7 @@
 <dependencies>
   
  
-  
+
   
 <dependency>
     <groupId>com.google.collections</groupId>
@@ -46,6 +46,17 @@
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-validator</artifactId>
     <version>3.1.0.GA</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.5.6</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.5.6</version>
+    <scope>test</scope>
 </dependency>
 <dependency>
     <groupId>commons-collections</groupId>
@@ -144,11 +155,13 @@
     <artifactId>org.springframework.web.struts</artifactId>
     <version>3.0.5.RELEASE</version>
 </dependency>
+ <!--
 <dependency>
 <groupId>javax.servlet.jsp</groupId>
 <artifactId>jsp-api</artifactId>
 <version>2.1</version>
 </dependency>
+-->
 <dependency>    
     <groupId>org.springframework</groupId>
     <artifactId>org.springframework.web</artifactId>
@@ -246,8 +259,8 @@
     
     
     
-    
-    
+   
+
     
     
     
@@ -274,11 +287,8 @@
         </configuration> 
       </plugin>
       
-      
-      
-      
-      
-      
+ 
+    
       
       
       
