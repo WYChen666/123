@@ -13,6 +13,11 @@
 //	public static String FILE_MATRIX = "D:\\FCM手算\\java配置与输出\\matrix1.txt";// 隶属度矩阵
 //
 //	public int numpattern;// 样本数
+
+//	public int numpattern;// 样本数
+
+//	public int numpattern;// 样本数//	public int numpattern;// 样本数
+//	public int numpattern;// 样本数
 //	public int dimension;// 每个样本点的维数
 //	public int cata;// 要聚类的类别数
 //	public int maxcycle;// 最大的迭代次数
